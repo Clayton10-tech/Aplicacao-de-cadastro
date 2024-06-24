@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="main.js" defer></script>
+    <title>CRUD</title>
+</head>
+<body>
+    <header>
+        <nav>
+        
+            <ul class="menu">
+                <li><a href="file:///C:/Users/clayt/OneDrive/%C3%81rea%20de%20Trabalho/crud/home.html">INÍCIO</a></li>
+                <li><a href="file:///C:/Users/clayt/OneDrive/%C3%81rea%20de%20Trabalho/crud/index.html#">CADASTRO DE CLIENTE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
+        <table id="tableClient" class="records">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                <!--<th>E-mail</th>-->
+                    <th>Celular</th>
+                    <th>CEP</th>
+                    <th>Endereço</th>
+                    <th>Número</th> 
+                <!--<th>Bairro</th>-->
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--<tr>
+                    <td>Maria</td>
+                    <td>maria@gmail.com</td>
+                    <td>Rua 7</td>
+                    <td>85</td>
+                    <td>(11) 97165-1111</td>
+                    <td>Anapolis</td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>João Pedro</td>
+                    <td>joao@gmail.com</td>
+                    <td>Rua 7</td>
+                    <td>85</td>
+                    <td>(11) 97165-2222</td>
+                    <td>Jandira</td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jose da Silva</td>
+                    <td>jose@gmail.com</td>
+                    <td>Rua 7</td>
+                    <td>85</td>
+                    <td>(11) 97165-3333</td>
+                    <td>São Roque</td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>-->
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Cliente</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Cliente" required>
+                    <input type="email" id="email" class="modal-field" placeholder="e-mail do Cliente" required>
+                    <input type="tel" id="celular" class="modal-field" placeholder="Celular do Cliente" autocomplete="tel" required>
+                    <input type="text" id="cep" class="modal-field" placeholder="Digite o CEP." required>
+                    <input type="text" id="endereco" class="modal-field" placeholder="Endereço do cliente" required>
+                    <input type="text" id="numero" class="modal-field" placeholder="Número" required>
+                    <input type="text" id="bairro" class="modal-field" placeholder="Bairro" required>
+                    
+                    <!--estudar expreções regulares-->
+
+                    <input type="text" id="cidade" class="modal-field" placeholder="Cidade do Cliente" required>
+                    <input type="text"  id="estado" class="modal-field" placeholder="Estado" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; Clayton de Oliveira Santos
+    </footer>
+</body>
+</html>

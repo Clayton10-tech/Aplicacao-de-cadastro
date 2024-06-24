@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #FFBA00;
+    --secundary-color: #FFF1CC;
+    --shadow-color: #CCC;
+    --text-color: #FFF;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'karla', sans-serif;
+    position:relative;
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary-color);
+    height: 80px; 
+    text-align: center;
+    line-height: 70px;
+    box-shadow: 0 1px 2px var(--shadow-color);
+}
+
+.menu {
+    list-style: none;
+    border: 1px, solid;
+    float: left;
+}
+
+.menu li{
+    position:relative;
+    float:left;
+    border-right:1px solid #c0c0c0;
+}
+
+.menu li a{
+    color:#333; 
+    text-decoration:none; 
+    padding:5px 10px; 
+    display:block;
+}
+
+.menu li a:hover{
+    background:#333;
+    color:#fff;
+    box-shadow: 0 3px 8px 0 #CCC;
+    -webkit-box-shadow: 0 3px 8px 0 #ccc;
+    text-shadow:0px 0px 5px #fff;
+}
+
+
+main { 
+    height: 100vh;
+    background: linear-gradient(120deg, #e9e8e2d8, #e4dcdcda);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 2px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
+
+.relogio div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(5, 5, 5, .9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 3;
+}
+
+.relogio span{
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.relogio span.tempo {
+    font-size: 10px;
+}
